@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body{
+            background-color: rgb(170, 175, 118);
+        }
+        .container{
+            width: 500px;
+            margin: auto;
+            margin-top: 150px;
+            border: 1px solid rgb(188, 202, 0) ;
+            padding: 20px;
+            box-shadow: 1px 1px 20px 1px;
+        }
+        table{
+            margin-top: 30px;
+            width: 100%;
+        }
+        td{
+            padding: 5px;
+        }
+        input{
+            width: 200px;
+            height: 30px;
+            border: 1px solid #97a057;
+            border-radius: 5px;
+            padding-left: 5px;
+            background: rgb(254, 255, 242) ;
+        }
+        input:focus{
+            outline: none;
+        }
+        h1{
+            font-weight: 400;
+            color: rgb(247, 14, 14);
+        }
+        #btn{
+            margin-top: 30px;
+            width: 100px;
+            background-color: rgb(200, 206, 226);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Log-in Page</h1>
+        <form action="#" name="form_1">
+            <table>
+                <tr>
+                    <td><label for="mail">Email </label></td>
+                    <td >: <input type="email" name="mail" id="mail" placeholder="Enter your email-id" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password </label></td>
+                    <td>: <input type="password" name="pass" id="pass" placeholder="Enter Password" required pattern="[a-zA-Z0-9!@#$%^&*]{6,20}"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Login" id="btn" onclick="myFunc()" name="submit">
+        </form>
+    </div>
+    <script>
+
+        // in doc -> form_1 is a form -> mail is an input box -> and value is th property
+        function myFunc() {
+            var mail = document.form_1.mail.value;
+            var pass = document.form_1.pass.value;
+            document.writeln("<h2>Email :  " + mail+ "</h2>");
+            document.writeln("<h2>Password :  " + pass+ "</h2>");
+        }
+
+        function fun(){
+            if(x == true)
+            {
+                document.getElementById('para1',)
+            }
+        }
+
+    </script>
+</body>
+</html>
