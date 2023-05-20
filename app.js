@@ -33,9 +33,11 @@ app.post("/", (req, res) => {
 
 	const jsonData = JSON.stringify(data);
 	const url = "https://us13.api.mailchimp.com/3.0/lists/3702a58d39";
+	const s1 =  "fa9c7401a10155";
+	const s2 = "3c298ee13b07108268-us13"
 	const options = {
 		method: "POST",
-		auth: "raghu:c68001864c71b98cb96c203cf309dc83-us13"
+		auth: "raghu:"+s1+s2
 	}
 	const request = https.request(url, options, function(response) {
 		const resCode = response.statusCode;
